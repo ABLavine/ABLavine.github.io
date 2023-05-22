@@ -5,7 +5,7 @@
   }
   
   .project {
-    background-color: #95dcbb;
+    background-color: hsla(0, 0%, 100%, 0.459);
     width: calc(80% / 3 - 20px);
     margin: 10px;
     padding: 20px;
@@ -40,6 +40,9 @@
   .project p {
     margin-top: 5px;
   }
+main{
+  background-color: #95dcbb;
+}
 header {
     background-color: #333;
     color: #ffffff;
@@ -68,4 +71,4 @@ header {
   nav a:hover {
     color: #ccc;
   }
-    
+  
