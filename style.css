@@ -1,15 +1,20 @@
 /* Global Styles */
 .dropdown-content {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.8s ease, opacity 0.8s ease;
+  max-height: 0;
+    transition: max-height 0.7s ease-out;
+    overflow: hidden;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
   visibility: visible;
+  max-height: 500px;
+  transition: max-height 1.2s ease-in;
   opacity: 1;
+
 }
 
 @media screen {
