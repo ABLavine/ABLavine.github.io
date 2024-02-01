@@ -8,8 +8,11 @@
     color:#042334 !important;
     background-color: currentColor !important;
 }
+.nav-link{
+    display: initial !important;
+}
 .primary-color-1-1{
-    color: #F5F1ED !important;
+    color: #899697 !important;
     background-color: currentColor !important;
 }
 .secondary-color-0-1{
@@ -105,54 +108,59 @@
 }
 @media screen and (max-width: 2000px){
     .rect-box h3{
-        font-size: 1.8rem !important;
+        font-size: min(3.5vh, 1.5rem) !important;
     }
     .rect-box h2{
-        font-size: 6.2rem !important;
-        width: 30% !important;
+        font-size: min(6.8rem, 11vh) !important;
+        width: fit-content !important;
     }
 }
 @media screen and (max-width: 1270px){
     .rect-box h3{
-        font-size: 1.5rem !important;
-        margin-left: 10% !important;    
+        padding-top: 1%;
+        font-size: 3vh !important;
+        margin-left: 5% !important;    
+    }
+    .rect-box h2{
+        font-size: 9.5vh !important;
+        width: fit-content !important;
     }
 }
  
 @media screen and (max-width: 1180px){
     .rect-box h3{
-        font-size: 1.5rem;
+        font-size: min(3vh, 1.5rem);
     }
 }
 @media screen and (max-width: 1084x){
     .rect-box h2{
-        width: 60% !important;
         margin-left: 1% !important;
     }
 }
 @media screen and (max-width: 1050px){
     .rect-box h3{
-        font-size: 1.4rem !important;
+        font-size: min(1.4rem,3vh) !important;
     /* margin-left: 14% !important; */
     }
 }
 
 @media screen and (max-width: 995px){
     .rect-box h3{
-        font-size: 1.35rem !important;
+        font-size: min(1.3rem, 2.8vh) !important;
 
-        margin-left: 18% !important;
+        /* margin-left: 18% !important; */
     }
 }
 
 @media screen and (max-width: 885px){
     .rect-box h3{
         font-size: 1.18rem !important;
-
+        padding: 0% !important;
         margin-left: 1% !important;
     }
     .rect-box h2{
-        width: 80% !important;
+        margin-right: 5%;
+        /* width: 80% !important; */
     }
 }
 
@@ -162,22 +170,20 @@
 
         margin-left: 1% !important;
     }
-    .rect-box h2{
-        width: 80% !important;
-    }
+
 }
 @media screen and (max-width: 800px){
     .rect-box h3{
-        padding-top: 2% !important;
+        /* padding-top: 2% !important; */
         color: white !important;
         margin-left: 1% !important;
         width: 100% !important;
-        font-size: 1.3rem !important;
+        font-size: 2.5vh !important;
     }
     .rect-box h2{
         text-align: start;
         width: 100% !important;
-        font-size: 5rem !important;
+        font-size: 7vh !important;    
     }
     .blue-moon{
         visibility: hidden;
@@ -192,38 +198,41 @@
     .rect-box h3{
 
         margin-left: 1% !important;
-        padding-top: 2% !important;
+        /* padding-top: 2% !important; */
         color: white !important;
-        font-size: 1.3rem !important;
+        font-size: min(1.1rem,2.5vh) !important;
     }
     .rect-box h2{
         text-align: start;
         
         width: 50% !important;
-        font-size: 5rem !important;
+        font-size: 3rem !important;
     }
     .rect-box h1{
         font-size: 8rem !important;
     }
 }
+@media screen and (max-width: 650px) {
+    .landing-section h1{
+        line-height: 15rem;
+        padding-top: 0%;
+    }
+    
+}
 @media screen and (max-width: 614px){
-    .rect-box h3{
-        padding-top: 2% !important;
-        /* color: black; */
-        font-size: 1.3rem !important;
-    }
-    .rect-box h2{
-        text-align: start;
-        width: 50% !important;
-        font-size: 5rem !important;
-    }
+
     .rect-box h1{
         font-size: 7rem !important;
     }
 }
-@media screen and (max-width: 560px){
+@media screen and (max-width:595px) {
+    .nav-link{
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width: 580px){
     .rect-box h3{
-        padding-top: 2% !important;
+        /* padding-top: 2% !important; */
         font-size: 1.3rem !important;
     }
     .rect-box h2{
@@ -236,13 +245,13 @@
     }
 }
 
-@media screen and (max-width: 495px){
+@media screen and (max-width: 580px){
     .rect-box h2{
         width: 100% !important;
         font-size: 3rem !important;
     }
     .rect-box h3{
-        padding-top: 2% !important;
+        /* padding-top: 2% !important; */
         font-size: 1rem !important;
         width: 100% !important;
     }
@@ -260,9 +269,15 @@
         font-size: medium !important;
     }
 }
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 455px) {
     h1{
         font-size: 5rem !important;
+        line-height: 5rem !important;
+        padding-top: 3% !important;
+    }
+    .right{
+        top: 10rem !important;
+        right: 0rem !important;
     }
     .subtext{
         font-size: 2rem !important;
@@ -271,6 +286,7 @@
     }
     .sub-right{
         right: 4.7rem !important;
+        top: 15.5rem !important;
     }
     h3{
         font-size: 1.4rem !important;
@@ -280,6 +296,11 @@
         visibility: hidden;
     }
 
+}
+@media screen and (max-width: 645px), screen and (max-height:480px){
+    .left, .sub-left{
+        visibility: hidden;
+    }
 }
 .rect-box::after{    
     z-index: 1;
@@ -296,7 +317,7 @@
 .rect-box h1{
     /* padding-top: 1%; */
     font-weight: bold;
-    font-size: 10rem;
+    font-size: 18vh;
     letter-spacing: 1rem;
     position: relative;
     text-align: left;
@@ -305,7 +326,7 @@
 .rect-box h2{
     position: relative;
     font-size: 7.3rem;
-    padding-top: 1%;
+    /* padding-top: 1%; */
     font-weight: bold;
     z-index: 2;
     /* width: 36%; */
@@ -315,12 +336,14 @@
     position: relative;
     font-family: 'Anonymous Pro', monospace;
     padding-top: 1%;
-    align-self: flex-end;
+
+    /* align-self: flex-end; */
     z-index: 2;
     /* font-size: 100%; */
     width: 63%;
     height: 100%;
-    margin-left: 1%;
+    margin-left: 2%;
+    
     /* text-align; */
     /* right: 0; */
     /* left:10rem; */
@@ -411,6 +434,7 @@
     flex: 1 0 30%;
     margin: 5px;
     max-height:40vh;
+    /* scrollbar-width: 2px; */
     /* width: 100%; */
     aspect-ratio: 1 / 1 ;
     /* justify-content: center; */
@@ -419,8 +443,10 @@
     /* margin-top: 5%; */
     flex-direction: column;
     overflow: scroll;
+    border-radius: 15px;
     display: flex;
 }
+
 .box .content-container {
     color: white;
     display: flex;
