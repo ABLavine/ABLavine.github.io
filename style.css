@@ -194,6 +194,19 @@
         height: 25% !important;
     }
 }
+@media screen and (max-width: 750px) {
+    .content-container .text-container, .footer-container{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 745px) {
+    .landing-section h1{
+        font-size: min(21vw, 26vh) !important;
+    }
+    .subtext{
+        font-size: 2.8rem !important;
+    }
+}
 @media screen and (max-width: 730px){
     .rect-box h3{
 
@@ -297,6 +310,18 @@
     }
 
 }
+@media screen and (max-width: 340px) {
+    .rect-box h1{
+       font-size: min(17vw,18vh) !important;    
+    }
+    
+}@media screen and (max-height:575px) {
+    .qoute, .left, .sub-left, .sub-right{
+        visibility: hidden !important;
+    }    
+}
+
+
 @media screen and (max-width: 645px), screen and (max-height:480px){
     .left, .sub-left{
         visibility: hidden;
