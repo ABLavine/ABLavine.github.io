@@ -400,10 +400,10 @@
     right: 8.7rem;
 }
 .left{
-    bottom: min(30rem, 35vw);
+    bottom: max(30rem, 35vw);
 }
 .sub-left{
-    bottom:min(25rem,32vw);
+    bottom:max(25rem,32vw);
     left: 5rem;
 }
 .subtext{
