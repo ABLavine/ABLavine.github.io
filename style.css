@@ -16,7 +16,7 @@
     background-color: currentColor !important;
 }
 .secondary-color-0-1{
-    color: #779287!important;
+    color: #b09a5d!important;
     background-color: currentColor !important;
 }
 .secondary-color-1-1{
@@ -42,7 +42,7 @@
     color:transparent;
 }
 .secondary-color-0-0{
-    color: #779287;
+    color: #2db37d;
 }
 .secondary-color-1-0{
     color:#8D0801;
@@ -118,7 +118,7 @@
 @media screen and (max-width: 1270px){
     .rect-box h3{
         padding-top: 1%;
-        font-size: 3vh !important;
+        font-size: min(1.4rem, 3vh) !important;
         margin-left: 5% !important;    
     }
     .rect-box h2{
@@ -152,7 +152,7 @@
     }
 }
 
-@media screen and (max-width: 885px){
+@media screen and (max-width: 895px){
     .rect-box h3{
         font-size: 1.18rem !important;
         padding: 0% !important;
@@ -172,18 +172,22 @@
     }
 
 }
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 810px){
     .rect-box h3{
         /* padding-top: 2% !important; */
         color: white !important;
         margin-left: 1% !important;
         width: 100% !important;
-        font-size: 2.5vh !important;
+        font-size: min(1.3rem, 2.5vh) !important;
     }
     .rect-box h2{
         text-align: start;
         width: 100% !important;
         font-size: 7vh !important;    
+    }
+    .rect-box h1{
+        font-size: 15vh !important;
     }
     .blue-moon{
         visibility: hidden;
@@ -213,29 +217,36 @@
         margin-left: 1% !important;
         /* padding-top: 2% !important; */
         color: white !important;
-        font-size: min(1.1rem,2.5vh) !important;
+        font-size: min(1.1rem,2.3vh) !important;
     }
     .rect-box h2{
         text-align: start;
-        
+        margin-bottom: 0rem !important;
         width: 50% !important;
         font-size: 3rem !important;
     }
     .rect-box h1{
-        font-size: 8rem !important;
+        font-size: min(17vw,18vh) !important;
     }
 }
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 665px) {
     .landing-section h1{
-        line-height: 15rem;
-        padding-top: 0%;
+        /* line-height: 15rem; */
+        /* padding-top: 0% !important; */
+        font-size: min(19vw, 20vh) !important;
+    }   
+}
+
+@media screen and (max-width: 645px), screen and (max-height:480px){
+    .left, .sub-left{
+        visibility: hidden;
     }
-    
 }
 @media screen and (max-width: 614px){
 
     .rect-box h1{
-        font-size: 7rem !important;
+        font-size: min(17vw,18vh) !important;
     }
 }
 @media screen and (max-width:595px) {
@@ -246,40 +257,27 @@
 @media screen and (max-width: 580px){
     .rect-box h3{
         /* padding-top: 2% !important; */
-        font-size: 1.3rem !important;
+        font-size: min(2vh, 1rem) !important;
+        width: 100% !important;
     }
     .rect-box h2{
         text-align: start;
         width: 50% !important;
-        font-size: 5rem !important;
+        /* font-size: min(9vh,12vw) !important; */
+        font-size: min(5.4vh, 6.5vw) !important;
     }
     .rect-box h1{
-        font-size: 6rem !important ;
+        font-size: min(5rem,19.1vw) !important;
+        letter-spacing: 0.5rem !important;
     }
 }
 
-@media screen and (max-width: 580px){
-    .rect-box h2{
-        width: 100% !important;
-        font-size: 3rem !important;
-    }
-    .rect-box h3{
-        /* padding-top: 2% !important; */
-        font-size: 1rem !important;
-        width: 100% !important;
-    }
-    .rect-box h1{
-        font-size: 5rem !important ;
-    }
-
-    
-}
 @media screen and (max-width: 475px) {
     .nav-link{
         padding: 0 !important;
     }
     a h3{
-        font-size: medium !important;
+        font-size: clamp(1px, 4vw, 5vh) !important;
     }
 }
 @media screen and (max-width: 455px) {
@@ -295,7 +293,6 @@
     .subtext{
         font-size: 2rem !important;
         width: 100% !important;
-        top: 20px !important;
     }
     .sub-right{
         right: 4.7rem !important;
@@ -316,17 +313,12 @@
     }
     
 }@media screen and (max-height:575px) {
-    .qoute, .left, .sub-left, .sub-right{
+    .qoute, .left, .sub-left, .sub-left{
         visibility: hidden !important;
     }    
 }
 
 
-@media screen and (max-width: 645px), screen and (max-height:480px){
-    .left, .sub-left{
-        visibility: hidden;
-    }
-}
 .rect-box::after{    
     z-index: 1;
     content: '';
@@ -376,7 +368,7 @@
 .landing-section h1{
     padding-top: 1%;
     font-weight: bold;
-    font-size: 10rem;
+    font-size: min(20vw, 31vh);
     letter-spacing: 1rem;
     /* text-shadow: #000 0px 0px 1px; */
     /* -webkit-font-smoothing: antialiased; */
@@ -408,20 +400,18 @@
     right: 8.7rem;
 }
 .left{
-    bottom: 30rem;
+    bottom: min(30rem, 35vw);
 }
 .sub-left{
-    bottom:25rem;
+    bottom:min(25rem,32vw);
     left: 5rem;
 }
 .subtext{
     font-weight: bold;
     z-index: 1;
-    position: absolute;
+    position: relative;
     font-size: 3rem;
     width: 100%;
-    top: 0;
-    transform: translateY(10rem);
 }
 .overlay-text{
     position: absolute !important;
@@ -432,7 +422,7 @@
     -webkit-text-stroke-width: 0.25rem;
     -webkit-text-stroke-color: #F5F1ED;
     outline-offset: 0px;
-    transform: translate(0.0999999rem,-0.0999999rem);
+    /* transform: translate(0.0999999rem,-0.0999999rem); */
 
 }
 .portfolio-header{
@@ -565,9 +555,16 @@ a h3{
     height: 100%;
     z-index: 1;
     position: relative;
+
+    /* width: 100%; */
+}
+.left-moon{
+    top: 4rem;
+    right: calc(9.5vh + 6rem);
+}
+.right-moon{
     top: 4rem;
     right: 6rem;
-    /* width: 100%; */
 }
 section{
     height: 100vh;
