@@ -219,6 +219,13 @@
          index += 1;
       })
    })
+   function tooSmall(){
+      console.log(window.innerWidth)
+      if (window.innerWidth < 460){
+         alert("Hello, seems like you're using a phone or mobile device. While the site is responsive, this is still a work in progress, and not all features may work properly. Please forgive any errors.")
+      }
+   }
+   window.onload = tooSmall
    document.getElementById('stars').classList.add(new Date().getHours() >= 18 ? 'starry-background' : ''); //starts at 6pm, might make it noon? idk
 </script>
 
