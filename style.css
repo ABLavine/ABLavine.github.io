@@ -473,7 +473,7 @@
     flex: 1;
     font-size: 1.3rem;
     padding: 20px;
-    padding-bottom: 0px; /* Adjust the padding as needed */
+    padding-bottom: 5px; /* Adjust the padding as needed */
   }
   
 .box .content-container  img {
@@ -484,6 +484,7 @@
   
   .box .title-container h2 {
     margin: 0; 
+    padding: 5px;
     color: white;/* Remove default margin for h2 */
   }
   .box .footer-container{
@@ -492,6 +493,7 @@
     word-wrap: break-word;
     font-size:1.5rem;
     margin: 5px;
+    padding: 5px;
     margin-top: 0px;
   }
 .starry-background{
