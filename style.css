@@ -108,7 +108,7 @@
 }
 @media screen and (max-width: 2000px){
     .rect-box h3{
-        font-size: min(3.5vh, 1.5rem) !important;
+        font-size: min(3vh, 2vw) !important;
     }
     .rect-box h2{
         font-size: min(6.8rem, 11vh) !important;
