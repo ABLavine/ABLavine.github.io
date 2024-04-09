@@ -104,11 +104,16 @@ nav, header{
     /* height: 100%; */
     z-index: 1;
     display: flex;
-    flex-basis: 22%
+    flex-basis: 22%;
+    width:40%;
 }
 
+#p_title{
+    margin:auto;
+    text-align: center;
+}
 .rect-box{
-    flex-basis:77%;
+    flex-basis:60%;
     position: relative;
     width: 40%;
     height: 16%;

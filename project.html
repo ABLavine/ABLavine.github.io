@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="portfolio.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+       crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+       crossorigin="anonymous"></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bebas+Neue&display=swap" rel="stylesheet">
+       
+    <!-- Add your CSS links or styles here -->
+</head>
+<body style="background-color:#042334">
+    <!-- Your content goes here -->
+    <!-- <div class="container">
+        
+      </div>
+       -->
+       <header class="sticky-top">
+         <nav class="navbar navbar-expand-lg primary-color-0-1 navbar-expand navbar-dark bd-navbar sticky-top">
+            <div class="container-fluid">
+               <a class="navbar-brand primary-color-1-0 p-0 me-0 me-lg-2" href="#">
+                  <img src="favicon.ico" width="30" height="30" class='d-inline-block align-left' , alt="icon">
+                  Ari Lavine
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation"><span
+                     class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav justify-content-center nav-fill w-100">
+                     <li class="nav-item"><a class="nav-link active primary-color-1-0" aria-current="page"
+                           href="index.html"><h3>Home</h3></a></li>
+                     <li class="nav-item"><a class="nav-link active primary-color-1-0" aria-current="page"
+                           href="index.html#about-me"><h3>About Me</h3></a></li>
+                     <li class="nav-item"><a class="nav-link active primary-color-1-0" aria-current="page"
+                           href="index.html#portfolio"><h3>Portfolio</h3></a></li>
+                     <!-- <li class="nav-item"><a class="nav-link" href="joke.html">Here's A joke!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sigh.html">Dogs!</a></li> -->
+                     <li class="nav-item"><a class="nav-link primary-color-1-0" href="#contact"><h3>Contact Me</h3></a></li>
+                     <!-- <li class="nav-item"><a class="nav-link" href="fourohfour.html">Page Not Found</a></li> -->
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+       <section>
+        <div class="info-boxes-container">
+           <div class="rect-box transparent title-box">
+              <div class="overlay-text-container">
+                 <h1 id='p_title' class="primary-color-1-0">PROJECT TITLE</h1>
+              </div>
+           </div>
+           <img id='l-img' src="imgs/python.png" class="main-image">
+
+           <div class="rect-box secondary-shadow-1-0">
+              <h2 class="primary-color-1-0" id="language">On Python</h2>
+              <h3 class="primary-color-0-0" id="l-info">info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info </h3>
+           </div>
+           <div class="rect-box secondary-color-0-1 bottom">
+              <h2 class="primary-color-1-0" id="project">Project information</h2>
+              <h3 class="primary-color-0-0" id="p-info"> info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info </h3>
+           </div>
+        </div>
+     </section>
+    <!-- Add your JavaScript scripts or links here -->
+    <script>
+      const projects = new Map([
+      ["python", ['imgs/python.png', 'On Python', 'Python is my goto language if I want to get something done quickly (although that might change, as I am starting to really like Rust.) I have found that the simple syntax and its ability to do almost anything with a few imports is extremely versitle and helpful.', 'ML and Flask with Python', 'For my final project for CS50, I made a flask website that hosted a few different neural networks and algorithms that were able to semi-accurately predict stocks, such that they turned a fair profit in the month I ran them for.', '  Python']],
+      ["java", ['imgs/java.png', 'On Java', '>I would say I have a love-hate relationship with Java. While I do enjoy some of the simplicity it offers, it has many annoying quirks that stop it from being my favorite language, and so I only use it when I need to make a complileable (is that a word?) application quickly.', 'Google Classroom Work Generator', 'Not long ago, my history teacher mentioned the annoyingness of having to manually update every single makeup work assignment in Google Classroom. I was able to use java with the Google Classroom API in order to make a lightweight application to automate this process for her.', "  Java"]],
+      ["html", ['imgs/htcsjs-removebg-preview.png', 'On HTML', 'While creative design is not my forte, I can turn an image into a picture if you give it to me. I have used HTML/CSS a fair amount, and am very proficent when it comes to structuring sites. I give full credit to the apperance of this website to my good friend, Lyra Ericson. Check out his stuff in the contact page.', 'This Site!', 'I have put a large amount of effort into this site. It is, without a doubt, my greatest use of HTML/CSS, and I am very proud of it.',"HTML/CSS"]],
+      ["js", ['imgs/js.png', 'On JavaScript', "While I do frequently use JS, do not mistake this usage for enjoyment of the language. I don't have a love-hate relationship with JS, not an on again off again relationship, I cannot stand JS. It is by far my least favorite langague, and if you want me to use it, you better have a very good reason.", 'Msc JS projects', "I've used JS frequently, out of necessity. I've used it for this site, I use it to make sure the extensions I install aren't malware, I use it to make my own extensions, and I use node to run various projects like Aspine, an alternate site for students to view their grades.","  Javascript"]],
+      ["sql", ['imgs/sqld.png', 'On SQL', "I enjoy SQL, it's a very logical language once you are familiar with it, and is simple to use. Not much to say about it, to be honest. I very rarely get use of it, as the times when I need to process data in my personal life are few and far between.", 'SQL in ML and Web', 'I Used SQL in the previously mentioned Python ML/Website project, where I needed to ensure that users had the correct monetary values, and that the relative profits had stayed the same.',"   SQL"]],
+      ["csharp", ['imgs/seesharp.png', 'On C#', "Unfortunatly, all of these games have ended up dying after I've made all the systems and need to start implementing art or actual sprites/models-- I have trouble using Blender, and don't have flair for pixel art. However, I have made some fun pranks on friends with C#-- a few backdoors here and there, just unique enough to not trigger windows defender.", 'C# Game with Unity', "I've messed around with C#/Unity quite a few times, to the point that I consider myself quite proficent. I enjoy tinkering around with Unity and seeing what kind of interesting systems I can create.","  C# and Unity"]]
+    ]); function changeProject(){
+         var url = window.location.href;
+         var project = projects.get(url.split("?")[1]);
+         console.log(url.split("?")[1]);
+         document.getElementById('p_title').textContent = project[5];
+         document.getElementById('l-img').src = project[0];
+         document.getElementById('language').textContent = project[1];
+         document.getElementById('l-info').textContent = project[2];
+         document.getElementById('project').textContent = project[3];
+         document.getElementById('p-info').textContent = project[4];
+      }
+      window.onload = changeProject
+    </script>
+</body>
+</html>
