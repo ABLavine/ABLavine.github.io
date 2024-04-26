@@ -41,7 +41,11 @@ height: 80%;
     justify-content: center;
   }
   .carousel__photo img{
-    height: 80%;
+    display: block;
+    width: auto;
+    height: 75%;
+    margin:auto;
+    margin-bottom: 0%;
   }
   /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
   .carousel__photo.initial,
@@ -115,7 +119,7 @@ height: 80%;
     color: white;
     flex: 1;
     word-wrap: break-word;
-    font-size:5rem;
+    font-size:5vh;
     margin: 5px;
     padding: 5px;
     margin-top: 0px;
