@@ -36,7 +36,7 @@ height: 80%;
     padding: 1rem 4rem;
     z-index: 100;
     transition: transform .5s, opacity .5s, z-index .5s;
-
+    visibility: hidden;
     display: flex;
     justify-content: center;
   }
@@ -48,6 +48,7 @@ height: 80%;
   .carousel__photo.active {
     opacity: 1;
     position: relative;
+    visibility: visible;
     z-index: 900;
   }
   

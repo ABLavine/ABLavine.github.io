@@ -65,7 +65,9 @@ html, body{
     background-color: #000;
     overflow: scroll;
     /* overflow-x: hidden; */
-    contain: paint;
+    contain: paint;    flex-basis: 73%;
+    position: relative;
+    width: 100%;
 }
 header, footer{
     flex: 0 0 150px;
@@ -87,6 +89,7 @@ nav, header{
   }
 .title-box{
     flex-basis: 100% !important;
+    margin: auto;
 }
   .info-boxes-container{
     width: 100%;
@@ -101,11 +104,11 @@ nav, header{
     /* align-items: ; */
 }
 .main-image{
-    /* height: 100%; */
     z-index: 1;
     display: flex;
     flex-basis: 22%;
-    width:40%;
+    margin-left: 2.5%;
+
 }
 
 #p_title{
@@ -113,15 +116,13 @@ nav, header{
     text-align: center;
 }
 .rect-box{
-    flex-basis:60%;
+    flex-basis: 73%;
     position: relative;
-    width: 40%;
-    height: 16%;
-    margin: auto;
-
+    width: 100%;
     max-height: 20% !important;
     display: flex;
     flex-direction: column;
+    margin-right: 2.5%;
 }
 .overlay-text-container{
     max-height: 10rem;
@@ -175,6 +176,7 @@ nav, header{
     }
     .rect-box{
         flex-basis: 100%;
+        margin: 0px !important
     }
 }
 
@@ -355,6 +357,7 @@ nav, header{
     z-index: 2;
     width: 100%;
     left: 1rem;
+    letter-spacing: 5px;
 }
 .rect-box h3{
     position: relative;
