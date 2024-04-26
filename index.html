@@ -6,6 +6,8 @@
    <meta name="viewport" content="width=device-width">
    <title>Ari Lavine's Resume Site</title>
    <link href="style.css" rel="stylesheet" type="text/css" />
+
+   <link href="css/carousel.css" rel="stylesheet" type="text/css" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -15,25 +17,26 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/animate.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body style="background-color: black !important;">
+<body id="fullpage"class='bodyclassbody' style="background-color: black !important;">
    <div class="internal-container">
       <!-- starry-background?  -->
-      <section class="landing-section" id="stars" data-class="primary-color-0-1" data-color="#0000">
-         <h1 class="text-cutout primary-color-1-0 center">Ari Lavine</h1>
+      <section class="landing-section section" id="stars" data-class="primary-color-0-1" data-color="#0000">
+         <h1 class="primary-color-1-0 center">Ari Lavine</h1>
          <h1 class="overlay-text">Ari Lavine</h1>
-         <h2 class="secondary-color-0-0 subtext">programmer - developer - innovator</h2>
+         <h2 class="secondary-color-0-0 subtext wow fadeIn" data-wow-delay="1s" data-wow-duration="5s">programmer - developer - innovator</h2>
          <div class="circle-div">
             <img src="tag16_05_00000 (1).png" style="object-fit: contain; height:101%" alt="Moon">
          </div>
          <div class="qoutes-container">
-            <h3 class="qoute secondary-shadow-0-0 right">“The best science comes from those who are fundamentally curious.”</h3>
+            <h3 class="qoute secondary-shadow-0-0 right wow slideInRight" data-wow-offset="10" data-wow-delay="0">“The best science comes from those who are fundamentally curious.”</h3>
             <h3 class="qoute secondary-shadow-0-0 sub-right">- Angelika Amon</h3>
-            <h3 class="qoute secondary-shadow-0-0 left">“The way to get started is to quit talking and begin doing.”</h3>
+            <h3 class="qoute secondary-shadow-0-0 left wow slideInLeft" data-wow-offset="300">“The way to get started is to quit talking and begin doing.”</h3>
             <h3 class="qoute secondary-shadow-0-0 sub-left">- Walt Disney</h3>
          </div>
       </section>
@@ -65,8 +68,8 @@
             </div>
          </nav>
       </header>
-      <section data-class="primary-color-3-1" id="about-me" data-color="#042334">
-         <img src="blue_moon.png" class="blue-moon left-moon" alt="Moon">
+      <section class="section" data-class="primary-color-3-1" id="about-me" data-color="#072b3f">
+         <img src="blue_moon.png" class="blue-moon left-moon wow slideInLeft"data-wow-duration="1s" data-wow-delay="3.5s" alt="Moon">
          <div class="info-boxes-container">
             <div class="rect-box transparent">
                <div class="overlay-text-container">
@@ -74,133 +77,51 @@
                </div>
             </div>
             <div class="rect-box secondary-shadow-1-0">
-               <h2 class="primary-color-1-0">Personal</h2>
-               <h3 class="primary-color-0-0">I'm Ari! I love to code, cook, play violin, and solve problems. I'm based out of Cambridge MA, and hope to learn more about the world via code.</h3>
+               <h2 class="primary-color-1-0 wow slideInRight">Personal</h2>
+               <h3 class="primary-color-0-0 wow slideInRight" data-wow-delay="0.3s">I'm Ari! I love to code, cook, play violin, and solve problems. I'm based out of Cambridge MA, and hope to learn more about the world via code.</h3>
             </div>
             <div class="rect-box secondary-color-0-1">
-               <h2 class="primary-color-1-0">Education</h2>
-               <h3 class="primary-color-0-0">I'm studying Computer Science in Cambridge MA. I a took few Data Science classes through Harvard when in was 15, and took CS50 at Harvard in my junior year (17).</h3>
+               <h2 class="primary-color-1-0 wow slideInLeft" data-wow-delay="1.1s">Education</h2>
+               <h3 class="primary-color-0-0 wow slideInLeft" data-wow-delay="0.8s">I'm studying Computer Science in Cambridge MA. I a took few Data Science classes through Harvard when in was 15, and took CS50 at Harvard in my junior year (17).</h3>
             </div>
             <div class="rect-box secondary-shadow-1-0">
-               <h2 class="primary-color-1-0">Experience</h2>
-               <h3 class="primary-color-0-0">I've worked retail, been a teaching assistant for CS at my high school, and have volunteered through Cambridge Neighbors, helping elders with tech problems.</h3>
+               <h2 class="primary-color-1-0 wow slideInRight" data-wow-delay="1.6s">Experience</h2>
+               <h3 class="primary-color-0-0 wow slideInRight" data-wow-delay="1.9s">I've worked retail, been a teaching assistant for CS at my high school, and have volunteered through Cambridge Neighbors, helping elders with tech problems.</h3>
      
             </div>
             <div class="rect-box secondary-color-0-1">
-               <h2 class="primary-color-1-0">Coding</h2>
-               <h3 class="primary-color-0-0">There is a satisfaction to be derived from coding, how I can enjoy the creation of things that are entirely new. Code is my personal favorite artform.</h3>
+               <h2 class="primary-color-1-0 wow slideInLeft" data-wow-delay="2.7s">Coding</h2>
+               <h3 class="primary-color-0-0 wow slideInLeft"data-wow-delay="2.4s">There is a satisfaction to be derived from coding, how I can enjoy the creation of things that are entirely new. Code is my personal favorite artform.</h3>
             </div>
             
          </div>
       </section>
 
-      <section data-class="primary-color-1-1" id="portfolio" data-color="#ADB2C2">
+      <section class="section" data-class="primary-color-1-1" id="portfolio" data-color="#ADB2C2">
          <h1 class="primary-color-0-0 portfolio-header">My Projects</h1>
-         <div class="boxes-container">
-            <div class="box primary-color-0-1" style="cursor:pointer;" onclick="window.location='project.html?python';">
-                <div class="title-container">
-                    <h2>ML With Python</h2>
-                </div>
-                <div class="content-container">
-                    <div class="image-container">
-                      <img src="imgs/python.png" alt="Your Image">
-                    </div>
-                    <div class="text-container">
-                      <p>For my final project for CS50, I made a flask website that hosted a few different neural networks and algorithms that were able to semi-accurately predict stocks, such that they turned a fair profit in the month I ran them for.</p>
-                    </div>
-                </div>
-                <div class="footer-container">
-                    <p>Python is my goto language if I want to get something done quickly (although that might change, as I am starting to really like Rust.) I have found that the simple syntax and its ability to do almost anything with a few imports is extremely versitle and helpful.</p>
-                </div>
-                  
-            </div> 
-            <div class="box primary-color-0-1" style="cursor:pointer;" onclick="window.location='project.html?java';">
-                <div class="title-container">
-                    <h2>Automatic Work Generator</h2>
-                </div>
-                <div class="content-container">
-                    <div class="image-container">
-                      <img src="imgs/java.png" alt="Your Image">
-                    </div>
-                    <div class="text-container">
-                      <p>Not long ago, my history teacher mentioned the annoyingness of having to manually update every single makeup work assignment in Google Classroom. I was able to use java with the Google Classroom API in order to make a lightweight application to automate this process for her.</p>
-                    </div>
-                </div>
-                <div class="footer-container">
-                    <p>I would say I have a love-hate relationship with Java. While I do enjoy some of the simplicity it offers, it has many annoying quirks that stop it from being my favorite language, and so I only use it when I need to make a complileable (is that a word?) application quickly.                </div>
+         <div class="carousel-wrapper">
+            <div class="carousel">
+        
+               <div class="carousel__photo"><img style="cursor:pointer;" onclick="window.location='project.html?csharp';" src="imgs/seesharp.png"> <div class="footer-container"><p>Hello World</p></div></div>
+              <div class="carousel__photo"><img style="cursor:pointer;" onclick="window.location='project.html?python';" src="imgs/pythony.png"><div class="footer-container"><p>Hello World</p></div></div>
+              <div class="carousel__photo"><img style="cursor:pointer;" onclick="window.location='project.html?java';" src="imgs/java.png"> <div class="footer-container"><p>Hello World</p></div></div>
+              <div class="carousel__photo"><img style="cursor:pointer;" onclick="window.location='project.html?html';" src="imgs/htcsjs-removebg-preview.png"><div class="footer-container"><p>Hello World</p></div></div>
+              <div class="carousel__photo"><img style="cursor:pointer;" onclick="window.location='project.html?js';" src="imgs/js.png"> <div class="footer-container"><p>Hello World</p></div></div>
+              <div class="carousel__photo"><img style="cursor:pointer;" onclick="window.location='project.html?sql';" src="imgs/sqld.png"><div class="footer-container"><p>Hello World</p></div></div>
+              
+              
+
+              <div class="carousel__button--next"></div>
+              <div class="carousel__button--prev"></div>
+        
             </div>
-    
-            <div class="box primary-color-0-1" style="cursor:pointer;" onclick="window.location='project.html?html';">
-                <div class="title-container">
-                    <h2>This Site!</h2>
-                </div>
-                <div class="content-container">
-                    <div class="image-container">
-                      <img src="imgs/htcsjs-removebg-preview.png" alt="Your Image">
-                    </div>
-                    <div class="text-container">
-                      <p>I have put a large amount of effort into this site. It is, without a doubt, my greatest use of HTML/CSS, and I am very proud of it.</p>
-                    </div>
-                </div>
-                <div class="footer-container">
-                    <p>While creative design is not my forte, I can turn an image into a picture if you give it to me. I give <b>full</b> credit to the apperance of this website to my good friend, <b>Lyra Ericson</b>. Check out his stuff in the contact page.</p>
-                </div>
-            </div>
-            <div class="box primary-color-0-1" style="cursor:pointer;" onclick="window.location='project.html?sql';">
-                <div class="title-container">
-                    <h2>SQL in ML and Web</h2>
-                </div>
-                <div class="content-container">
-                    <div class="image-container">
-                      <img src="imgs/sqld.png" alt="Your Image">
-                    </div>
-                    <div class="text-container">
-                      <p>I Used SQL in the previously mentioned ML/Website project, where I needed to ensure that users had the correct monetary values, and that the relative profits had stayed the same.</p>
-                    </div>
-                </div>
-                <div class="footer-container">
-                    <p>I enjoy SQL, it's a very logical language once you are familiar with it, and is simple to use. Not much to say about it, to be honest. I very rarely get use of it, as the times when I need to process data in my personal life are few and far between.</p>
-                </div>
-            </div>
-            <div class="box primary-color-0-1"  style="cursor: pointer;" onclick="window.location='project.html?js';">
-                <div class="title-container">
-                    <h2>JS Projects (misc)</h2>
-                </div>
-                <div class="content-container">
-                    <div class="image-container">
-                      <img src="imgs/js.png" alt="Your Image">
-                    </div>
-                    <div class="text-container">
-                      <p>I've used JS frequently, out of necessity. I've used it for this site, I use it to make sure the extensions I install aren't malware, I use it to make my own extensions, and I use node to run various projects like Aspine, an alternate site for students to view their grades.</p>
-                    </div>
-                </div>
-                <div class="footer-container">
-                    <p>However, do not mistake this frequent usage for enjoyment of the language. I don't have a love-hate relationship with JS, not an on again off again relationship, I <b>HATE</b> JS. It is by far my least favorite langague, and if you want me to use it, you better have a damn good reason.</p>
-                </div>
-            </div>
-            <div class="box primary-color-0-1" style="cursor:pointer;" onclick="window.location='project.html?csharp';">
-                <div class="title-container">
-                    <h2>C# Game with Unity</h2>
-                </div>
-                <div class="content-container">
-                    <div class="image-container">
-                      <img src="imgs/seesharp.png" alt="Your Image">
-                    </div>
-                    <div class="text-container">
-                      <p>I've messed around with C#/Unity quite a few times, to the point that I consider myself quite proficent. I enjoy tinkering around with Unity and seeing what kind of interesting systems I can create.</p>
-                    </div>
-                </div>
-                <div class="footer-container">
-                    <p>Unfortunatly, all of these games have ended up dying after I've made all the systems and need to start implementing art or actual sprites/models-- the aformentioned lack of visual design ability has hampered that idea. However, I have made some fun pranks on friends with C#-- a few backdoors here and there, just unique enough to not trigger windows defender.</p>
-                </div>
-            </div>
-         </div>
+          </div>
       </section>
-  12    <section  data-class="secondary-color-0-1" id="contact" style="display: flex; flex-direction:column; justify-content: center;" data-color="#042334">
+      <section class="section"  data-class="secondary-color-0-1" id="contact" style="display: flex; flex-direction:column; justify-content: center;" data-color="#042334">
         <a target="_blank" rel="nofollow noopener" style="margin:auto; " title="Contacting Ari" href="mailto:alavine171@gmail.com"><img src="Contact.png"></a>
         <a href="https://66a4e5a8-d05c-4056-8f44-1d5a47ab5efb-00-89kpnsddjqfz.kirk.replit.dev/"><p  style="font-size: 2rem; color:white; margin-right:auto;align-self:flex-end">Design by Lyra Ericson  <i class="fa fa-external-link"></i></p></a>
       </section>
-      <section data-class="secondary-color-1-1" data-color="#8D0801"></section>
+      <section class="section" data-class="secondary-color-1-1" data-color="#8D0801"></section>
    </div>
 
 </body>
@@ -225,7 +146,24 @@
       }
    }
    window.onload = tooSmall
-   document.getElementById('stars').classList.add(new Date().getHours() >= 14 ? 'starry-background' : ''); //starts at 6pm, might make it noon? idk
 </script>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- fullpage -->
+		<script src="js/jquery.fullPage.js"></script>
+		<!-- smoothScroll -->
+		<script src="js/smoothscroll.js"></script>
+		<!-- wow -->
+		<script src="js/wow.min.js"></script>
+		<!-- text rotater -->
+		<script src="js/jquery.simple-text-rotator.js"></script>
+		<!-- custom -->
+      <script src="js/custom.js"></script>
 
+      <script>
+
+ 
+      </script>
 </html>
