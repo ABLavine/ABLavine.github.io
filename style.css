@@ -302,7 +302,7 @@
 }
 @media screen and (max-width: 455px) {
     h1{
-        font-size: 5rem !important;
+        font-size: min(10vh,5rem) !important;
         line-height: 5rem !important;
         padding-top: 3% !important;
     }
@@ -531,7 +531,7 @@
     /* background-color: black; */
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-    opacity: 1.0;
+    opacity: 0.5;
     background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px); 
     /* background-repeat: no-repeat; */
     -webkit-animation: fadein 16s; /* Safari, Chrome and Opera > 12.1 */
@@ -551,7 +551,7 @@
 html, body{
     height: auto;
     width: 100%;
-    transition: background-color .15s ease;
+    transition: background-color 0.45s ease;
     background-color: #000;
     overflow: visible;
     /* overflow-x: hidden; */

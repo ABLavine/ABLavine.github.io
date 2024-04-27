@@ -61,14 +61,12 @@
 html, body{
     height: 100%;
     width: 100%;
-    transition: background-color .3s ease;
+    transition: background-color 8s ease !important;
     background-color: #000;
     overflow: scroll;
     /* overflow-x: hidden; */
-    contain: paint;    flex-basis: 73%;
-    position: relative;
-    width: 100%;
-}
+    contain: paint;
+    }
 header, footer{
     flex: 0 0 150px;
     width:100%;
