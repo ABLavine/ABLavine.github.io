@@ -444,6 +444,7 @@
     -webkit-text-stroke-width: 0.25rem;
     -webkit-text-stroke-color: #F5F1ED;
     outline-offset: 0px;
+    paint-order: stroke fill;
     /* transform: translate(0.0999999rem,-0.0999999rem); */
 
 }
